@@ -2,10 +2,10 @@
 
 // use allows us to refer to methods without using their fully qualified names
 // std::os contains the args() function
-use std::os;
+use std::env;
 
 fn main() {
-    let argv = os::args();
+    let argv = env::args();
     let argc = argv.len();
 
     //  == checks for equality
