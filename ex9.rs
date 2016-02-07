@@ -15,7 +15,7 @@ fn main() {
     } else if argc > 1 && argc < 4  {
         println!("Here are your arguments:");
 
-        for arg in argv.iter() {
+        for arg in argv {
             print!("{} ", arg);
         }
         println!("");
