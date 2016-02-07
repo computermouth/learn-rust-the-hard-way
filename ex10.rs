@@ -1,9 +1,9 @@
-use std::os;
+use std::env;
 
 fn main() {
     // argv and argc are traditional names used in C and C++ for command line
     // arguments and number of command line arguments respectively
-    let argv = os::args();
+    let argv = env::args();
     let argc = argv.len();
 
     if argc != 2 {
