@@ -26,7 +26,7 @@ fn main() {
     // don't worry for now why we pass size_of_val '&areas' instead of just 'areas'.
     println!("The size of areas: {}", std::mem::size_of_val(&areas));
     // size_of returns the size of the given type in bytes as a u8. Notice how we
-    // are calling this function using '<int>' and providing no argument to the fuction.
+    // are calling this function using '<isize>' and providing no argument to the fuction.
     // We are parameterizing this function based on a type and not a value.
     // When dealing with types we use '<>' and when dealing with values we use '()'.
     println!("The size of an isize: {}", std::mem::size_of::<isize>());
