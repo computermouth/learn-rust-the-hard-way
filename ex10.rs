@@ -8,7 +8,7 @@ fn main() {
 
     if argc != 2 {
         // this is how you exit a program early
-        // notice the ! sense panic is not a function but rather a macro
+        // notice the ! since panic is not a function but rather a macro
         panic!("ERROR: You need exactly one argument.");
     }
 
