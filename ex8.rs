@@ -4,10 +4,10 @@ fn main() {
 
     // Here's a loop to read through each element in a programs args() and print each
     // with it's index in the array.
-    let mut x = 0;
+    let mut i = 0;
     for arg in args {
-        println!("arg{}: {}", x, arg);
-        x = x + 1;
+        println!("arg{}: {}", i, arg);
+        i = i + 1;
     }
 
     let states = ["California", "Oregon", "Washington", "Texas"];
