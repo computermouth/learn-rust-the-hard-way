@@ -1,21 +1,22 @@
 fn main() {
-    let args = std::os::args();
-    let args_size = args.len();
 
-    // Another way to iterate is by using a while loop. In the following cases,
-    // the while loop is much easier to screw up than a for loop and is arguably
-    // hard to read and understand. In general prefer for loops over while loops
-    // unless there's a good reason to use them.
-    let mut i = 0;
-    while i < args_size {
-        println!("arg {}: {}", i, args[i]);
-        i = i + 1;
+    // Here's a loop to read through each element in a programs args() and print each
+    // with it's index in the array.
+    let mut x = 0;
+    for arg in std::env::args() {
+        println!("arg{}: {}", x, arg);
+        x = x + 1;
     }
 
     let states = ["California", "Oregon", "Washington", "Texas"];
 
     let num_states = states.len();
     let mut i = 0;
+    
+    // Another way to iterate is by using a while loop. In the following cases,
+    // the while loop is much easier to screw up than a for loop and is arguably
+    // hard to read and understand. In general prefer for loops over while loops
+    // unless there's a good reason to use them.
     while i < num_states {
         println!("state {}: {}", i, states[i]);
         // We can use += for a short hand add and assign.
