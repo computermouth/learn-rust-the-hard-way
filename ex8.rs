@@ -1,9 +1,11 @@
 fn main() {
 
+    let args = std::env::args();
+
     // Here's a loop to read through each element in a programs args() and print each
     // with it's index in the array.
     let mut x = 0;
-    for arg in std::env::args() {
+    for arg in args {
         println!("arg{}: {}", x, arg);
         x = x + 1;
     }
